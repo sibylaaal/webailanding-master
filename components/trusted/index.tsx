@@ -1,7 +1,7 @@
-import {Button, Divider, Grid, Text} from '@nextui-org/react';
+import { Button, Divider, Grid, Text } from '@nextui-org/react';
 import React from 'react';
-import {AcmeLogo} from '../navbar/logo';
-import {Flex} from '../styles/flex';
+import { AcmeLogo } from '../navbar/logo';
+import { Flex } from '../styles/flex';
 
 export const Trusted = () => {
    return (
@@ -17,7 +17,7 @@ export const Trusted = () => {
                },
             }}
          >
-            <Text className='text-3xl font-bold' h2 css={{textAlign: 'center'}}>
+            <Text className='text-3xl font-bold' h2 css={{ textAlign: 'center' }}>
                Working with New technologies
             </Text>
             <Text
@@ -46,59 +46,83 @@ export const Trusted = () => {
                   },
                }}
             >
-               <Grid sm={3} justify="center">
+               <Grid xs={6} sm={3} justify="center">
                   <Flex align={'center'} justify={'center'}>
-                     <img className='w-15 h-15' src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'/>
-                
+                     <img 
+                        className='responsive-img' 
+                        src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
+                        alt='React'
+                     />
                   </Flex>
                </Grid>
-               <Grid sm={3} justify="center">
+               <Grid xs={6} sm={3} justify="center">
                   <Flex align={'center'}>
-                     <img className='w-15 h-15' src='https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png'/>{' '}
-                
+                     <img 
+                        className='responsive-img' 
+                        src='https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png'
+                        alt='Flutter'
+                     />
                   </Flex>
                </Grid>
-               <Grid sm={3} justify="center">
+               <Grid xs={6} sm={3} justify="center">
                   <Flex align={'center'}>
-                     <img className='w-15 h-15' src='https://cdn-icons-png.flaticon.com/512/174/174881.png'/>{' '}
-                   
+                     <img 
+                        className='responsive-img' 
+                        src='https://cdn-icons-png.flaticon.com/512/174/174881.png'
+                        alt='GitHub'
+                     />
                   </Flex>
                </Grid>
-               <Grid sm={3} justify="center">
+               <Grid xs={6} sm={3} justify="center">
                   <Flex align={'center'}>
-                     <img className='w-15 h-15' src='https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png'/>{' '}
-                   
+                     <img 
+                        className='responsive-img' 
+                        src='https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png'
+                        alt='Vue.js'
+                     />
                   </Flex>
                </Grid>
-               <Grid sm={3} justify="center">
+               <Grid xs={6} sm={2} justify="center">
                   <Flex align={'center'}>
-                     <img className='w-15 h-15' src='https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png'/>{' '}
-                   
+                     <img 
+                        className='responsive-img' 
+                        src='https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png'
+                        alt='Next.js'
+                     />
                   </Flex>
                </Grid>
-               <Grid sm={3} justify="center">
+               <Grid xs={6} sm={3} justify="center">
                   <Flex align={'center'}>
-                     <img className='w-15 h-15' src='https://static-00.iconduck.com/assets.00/laravel-icon-497x512-uwybstke.png'/>{' '}
-                   
+                     <img 
+                        className='responsive-img' 
+                        src='https://static-00.iconduck.com/assets.00/laravel-icon-497x512-uwybstke.png'
+                        alt='Laravel'
+                     />
                   </Flex>
                </Grid>
-               <Grid sm={3} justify="center">
+               <Grid xs={6} sm={3} justify="center">
                   <Flex align={'center'}>
-                     <img className='w-15 h-15' src='https://www.manektech.com/storage/developer/1646733543.webp'/>{' '}
-                   
+                     <img 
+                        className='responsive-img' 
+                        src='https://www.manektech.com/storage/developer/1646733543.webp'
+                        alt='Manektech'
+                     />
                   </Flex>
                </Grid>
-               <Grid sm={3} justify="center">
+               <Grid xs={6} sm={3} justify="center">
                   <Flex align={'center'}>
-                     <img className='w-15 h-15' src='https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png'/>{' '}
-                   
+                     <img 
+                        className='responsive-img' 
+                        src='https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png'
+                        alt='Docker'
+                     />
                   </Flex>
                </Grid>
             </Grid.Container>
          </Flex>
 
          <Divider
-            css={{position: 'absolute', inset: '0p', left: '0', mt: '$5'}}
+            css={{ position: 'absolute', inset: '0p', left: '0', mt: '$5' }}
          />
       </>
    );

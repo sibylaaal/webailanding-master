@@ -6,6 +6,12 @@
 @tailwind utilities;
 
 
+/* Add this CSS to your global stylesheet or in a CSS-in-JS solution */
+.responsive-img {
+   max-width: 100%;
+   height: auto;
+   width: auto; /* Ensures images maintain their aspect ratio */
+}
 
 html,
 body {
