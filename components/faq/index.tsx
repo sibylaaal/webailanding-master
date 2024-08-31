@@ -9,7 +9,7 @@ export const Faq = () => {
         </div>
         <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
           <div className="py-5">
-            <details style={{backgroundColor:'none'}} className="group p-2 rounded-xl">
+            <details  className="group p-2 rounded-xl">
               <summary className="flex justify-between items-center font-medium cursor-pointer">
                 <span>What is a SAAS platform?</span>
                 <span className="transition group-open:rotate-180">
@@ -54,6 +54,7 @@ export const Faq = () => {
                   </svg>
                 </span>
               </summary>
+               
               <span className="mt-3 group-open:animate-fadeIn">
                 We offer a variety of billing options, including monthly and annual
                 subscription plans, as well as pay-as-you-go pricing for certain
@@ -166,7 +167,7 @@ export const Faq = () => {
                 </span>
               </summary>
               <span className="mt-3 group-open:animate-fadeIn">
-                Documentation is available on the company's website and can be
+                Documentation is available on the companys website and can be
                 accessed by logging in to your account. The documentation provides
                 detailed information on how to use the platform, as well as code examples
                 and other resources.
@@ -195,7 +196,7 @@ export const Faq = () => {
               </summary>
               <span className="mt-3 group-open:animate-fadeIn">
                 If you need help with the platform or have any other questions, you
-                can contact the company's support team by submitting a support
+                can contact the companys support team by submitting a support
                 request through the website or by emailing support@We.com.
               </span>
             </details>
