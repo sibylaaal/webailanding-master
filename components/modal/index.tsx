@@ -1,22 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
    Modal,
    Input,
-   Row,
-   Checkbox,
+   Textarea,
    Button,
    Text,
    Navbar,
-   Textarea,
 } from '@nextui-org/react';
 
 export const ModalLogin = () => {
-   const [visible, setVisible] = React.useState(false);
+   const [visible, setVisible] = useState(false);
+   const [email, setEmail] = useState('');
+   const [message, setMessage] = useState('');
+   const [sending, setSending] = useState(false);
+
    const handler = () => setVisible(true);
    const closeHandler = () => {
       setVisible(false);
-      console.log('closed');
+      setEmail('');
+      setMessage('');
    };
+
+   const redirectToWhatsApp = () => {
+      setSending(true);
+
+      // Create a WhatsApp URL with a pre-filled message
+      const whatsappUrl = `https://wa.me/0769518824?text=${encodeURIComponent(`Message from: ${email}\n\n${message}`)}`;
+
+      // Redirect to the WhatsApp URL
+      window.location.href = whatsappUrl;
+
+      // Reset sending state
+      setSending(false);
+      closeHandler();
+   };
+
    return (
       <div>
          <Navbar.Link onClick={handler}>Contact us</Navbar.Link>
@@ -42,23 +60,23 @@ export const ModalLogin = () => {
                   fullWidth
                   color="primary"
                   size="lg"
-                  placeholder="Email"
-                  //   contentLeft={<Mail fill="currentColor" />}
+                  placeholder="Your Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                />
-            
                <Textarea
-                   bordered
-                   fullWidth
-                   color="primary"
-                   size="lg"
-                   placeholder="message"
+                  bordered
+                  fullWidth
+                  color="primary"
+                  size="lg"
+                  placeholder="Your Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                />
-          
             </Modal.Body>
             <Modal.Footer>
-         
-               <Button auto onClick={closeHandler}>
-                  send
+               <Button auto onClick={redirectToWhatsApp} disabled={sending}>
+                  {sending ? 'Sending...' : 'Send'}
                </Button>
             </Modal.Footer>
          </Modal>
