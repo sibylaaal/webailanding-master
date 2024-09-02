@@ -214,7 +214,7 @@ Get Started
                   </Text>
                 </Grid>
                 <Text className='text-3xl font-bold p-2' h4 css={{ lineHeight: '$xs', color: '$blue600' }}>
-                  25000dh
+                  3000dh
                 </Text>
               </Grid.Container>
             </Card.Header>
