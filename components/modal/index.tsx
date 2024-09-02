@@ -7,6 +7,7 @@ import {
    Button,
    Text,
    Navbar,
+   Textarea,
 } from '@nextui-org/react';
 
 export const ModalLogin = () => {
@@ -18,7 +19,7 @@ export const ModalLogin = () => {
    };
    return (
       <div>
-         <Navbar.Link onClick={handler}>Login</Navbar.Link>
+         <Navbar.Link onClick={handler}>Contact us</Navbar.Link>
          <Modal
             closeButton
             blur
@@ -30,7 +31,7 @@ export const ModalLogin = () => {
                <Text id="modal-title" size={18}>
                   Welcome to
                   <Text b size={18}>
-                     NextUI
+                     Webai
                   </Text>
                </Text>
             </Modal.Header>
@@ -44,28 +45,20 @@ export const ModalLogin = () => {
                   placeholder="Email"
                   //   contentLeft={<Mail fill="currentColor" />}
                />
-               <Input
-                  clearable
-                  bordered
-                  fullWidth
-                  color="primary"
-                  size="lg"
-                  placeholder="Password"
-                  //   contentLeft={<Password fill="currentColor" />}
+            
+               <Textarea
+                   bordered
+                   fullWidth
+                   color="primary"
+                   size="lg"
+                   placeholder="message"
                />
-               <Row justify="space-between">
-                  <Checkbox>
-                     <Text size={14}>Remember me</Text>
-                  </Checkbox>
-                  <Text size={14}>Forgot password?</Text>
-               </Row>
+          
             </Modal.Body>
             <Modal.Footer>
-               <Button auto flat color="error" onClick={closeHandler}>
-                  Close
-               </Button>
+         
                <Button auto onClick={closeHandler}>
-                  Sign in
+                  send
                </Button>
             </Modal.Footer>
          </Modal>

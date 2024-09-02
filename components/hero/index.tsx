@@ -1,21 +1,21 @@
-import {Button, Divider, Input, Text} from '@nextui-org/react';
+import { Button, Divider, Input, Text } from '@nextui-org/react';
 import React from 'react';
-import {CheckIcon} from '../icons/CheckIcon';
-import {Box} from '../styles/box';
-import {Flex} from '../styles/flex';
+import { CheckIcon } from '../icons/CheckIcon';
+import { Box } from '../styles/box';
+import { Flex } from '../styles/flex';
 
 export const Hero = () => {
    return (
       <>
          <Flex
             css={{
-               'gap': '$3',
-               'px': '$6',
-               'flexDirection': 'column',
-               'alignContent': 'center',
-               'justifyContent': 'center',
-               'alignItems': 'center',
-               'width': '100%',
+               gap: '$3',
+               px: '$6',
+               flexDirection: 'column',
+               alignContent: 'center',
+               justifyContent: 'center',
+               alignItems: 'center',
+               width: '100%',
                '@sm': {
                   flexDirection: 'row',
                   mt: '$20',
@@ -26,14 +26,13 @@ export const Hero = () => {
             <Box
                css={{
                   pt: '$13',
-
                   display: 'flex',
                   flexDirection: 'column',
                   gap: '$5',
                }}
             >
                <Box
-               className='text-4xl font-bold'
+                  className='text-4xl font-bold'
                   css={{
                      maxWidth: '400px',
                   }}
@@ -44,7 +43,7 @@ export const Hero = () => {
                         display: 'inline',
                      }}
                   >
-                     Technologie Agnecy
+                     Building the Future
                   </Text>
                   <Text
                      h1
@@ -52,7 +51,7 @@ export const Hero = () => {
                         display: 'inline',
                      }}
                   >
-                     for{' '}
+                     with{' '}
                   </Text>
                   <Text
                      h1
@@ -61,7 +60,7 @@ export const Hero = () => {
                      }}
                      color="primary"
                   >
-                     React developers
+                     Passion and Code
                   </Text>
                </Box>
 
@@ -73,8 +72,7 @@ export const Hero = () => {
                   size={'$lg'}
                   span
                >
-                  The easiest way to build React Landing page in seconds. Save
-                  time and focus on your project.
+                  Join our journey in shaping the digital world. Leverage the power of modern web technologies and let your creativity shine.
                </Text>
 
                <Flex
@@ -90,8 +88,8 @@ export const Hero = () => {
                <Flex
                   wrap={'wrap'}
                   css={{
-                     'gap': '$8',
-                     'py': '$7',
+                     gap: '$8',
+                     py: '$7',
                      '@sm': {
                         py: '$4',
                      },
@@ -131,17 +129,14 @@ export const Hero = () => {
                   },
                }}
             >
-
-<video className='rounded-xl'  width="600" autoPlay loop controls>
-        <source src="vd.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-
+               <video className='rounded-xl' width="600" autoPlay loop controls>
+                  <source src="vd.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+               </video>
             </Box>
          </Flex>
          <Divider
-            css={{position: 'absolute', inset: '0p', left: '0', mt: '$10'}}
+            css={{ position: 'absolute', inset: '0', left: '0', mt: '$10' }}
          />
       </>
    );

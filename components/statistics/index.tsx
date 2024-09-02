@@ -16,11 +16,13 @@ export const Statistics = () => {
             <Flex direction={'column'} align={'center'}>
                <Text
                   h3
-                  css={{
+                  className='text-3xl font-bold pb-5'
+                  css={{ 
+                     color: '$blue600' ,
                      textAlign: 'center',
                   }}
                >
-                  Over 8000+ projects completed
+                  Over 80+ projects completed
                </Text>
                <Text
                   span
@@ -29,9 +31,7 @@ export const Statistics = () => {
                      textAlign: 'center',
                   }}
                >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Iusto provident omnis deleniti temporibus pariatur corporis
-                  aperiam
+         With over 80 successful projects completed, we excel in delivering tailored solutions for your business needs. From mobile and web apps to custom websites, our expertise ensures your vision becomes a reality with cutting-edge technology.
                </Text>
             </Flex>
             <Flex
@@ -48,7 +48,7 @@ export const Statistics = () => {
             >
                <Flex direction={'column'}>
                   <Text h2 css={{color: '$blue600'}}>
-                     $500K+
+                     $50K+
                   </Text>
                   <Text span css={{textAlign: 'center'}} weight={'medium'}>
                      Revenue
@@ -56,7 +56,7 @@ export const Statistics = () => {
                </Flex>
                <Flex direction={'column'}>
                   <Text h2 css={{color: '$blue600'}}>
-                     10+
+                     1+
                   </Text>
                   <Text span css={{textAlign: 'center'}} weight={'medium'}>
                      Products
@@ -64,10 +64,10 @@ export const Statistics = () => {
                </Flex>
                <Flex direction={'column'}>
                   <Text h2 css={{color: '$blue600'}}>
-                     $150+
+                     150+
                   </Text>
                   <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Components
+                     apps
                   </Text>
                </Flex>
                <Flex direction={'column'}>

@@ -27,22 +27,10 @@ export const Features1 = () => {
             }}
          >
             <Flex direction="column">
-               <Text span css={{color: '$blue600'}}>
+               <Text className='text-3xl font-bold' span css={{color: '$blue600'}}>
                   Awesome Feature
                </Text>
-               <Text h3>Your title here</Text>
-               <Text
-                  span
-                  css={{
-                     maxWidth: '400px',
-                     color: '$accents8',
-                  }}
-               >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet nisl,
-                  nec tincidunt nisl lorem eu nunc. Sed euismod, nisl ut aliquam
-                  lacinia,
-               </Text>
+         
 
                <Flex
                   css={{
@@ -53,7 +41,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                        Your title here
+                     Comprehensive Mobile App Development
                      </Text>
                      <Text
                         span
@@ -62,9 +50,8 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
+                             We specialize in creating innovative and user-friendly mobile applications tailored to your specific needs. Our expert team ensures seamless performance and engaging user experiences across all platforms.
+
                      </Text>
                   </Flex>
                </Flex>
@@ -77,7 +64,8 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                        Your title here
+
+                     Cutting-Edge Web Applications
                      </Text>
                      <Text
                         span
@@ -86,9 +74,8 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
+                              Our web applications are built using the latest technologies to deliver high-performance, scalable, and secure solutions that drive your business forward and enhance your online presence.
+
                      </Text>
                   </Flex>
                </Flex>
@@ -101,8 +88,8 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                        Your title here
-                     </Text>
+                     Custom Website Design and Development
+                                          </Text>
                      <Text
                         span
                         css={{
@@ -110,9 +97,8 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
+                             We craft responsive and visually appealing websites that reflect your brand identity and engage your audience effectively, ensuring a strong and lasting online impression.
+
                      </Text>
                   </Flex>
                </Flex>

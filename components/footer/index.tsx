@@ -1,8 +1,10 @@
-import {Divider, Text} from '@nextui-org/react';
+import { Divider, Text } from '@nextui-org/react';
 import React from 'react';
-import {AcmeLogo} from '../navbar/logo';
-import {Box} from '../styles/box';
-import {Flex} from '../styles/flex';
+import { AcmeLogo } from '../navbar/logo';
+import { Box } from '../styles/box';
+import { Flex } from '../styles/flex';
+import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+
 
 export const Footer = () => {
    return (
@@ -12,161 +14,42 @@ export const Footer = () => {
             px: '$6',
          }}
       >
-         <Box as={'footer'} css={{width: '100%'}}>
+         <Box as={'footer'} css={{ width: '100%' }}>
             <Flex
                justify={'center'}
                wrap={'wrap'}
                align={'center'}
                css={{
                   'gap': '$10',
-                  '&  ul': {
+                  '& ul': {
                      margin: 0,
                   },
                   '@sm': {},
                }}
             >
+               {/* Other sections of the footer */}
+
                <Flex
-                  css={{gap: '$5', w: '250px'}}
+                  css={{ gap: '$5', w: '250px' }}
                   direction={'column'}
                   align={'center'}
                >
-                  <AcmeLogo />
-                  <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
+                  <Text h5>Follow Us</Text>
+                  <Box as={'ul'} css={{ gap: '$5', listStyle: 'none', display: 'flex', justifyContent: 'center' }}>
                      <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           First Link
-                        </Text>
+                        <a href="https://www.linkedin.com/company/web-aii/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                           <FaLinkedin size={24} style={{ color: '#0e76a8' }} />
+                        </a>
                      </Box>
                      <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Second Link
-                        </Text>
+                        <a href="https://www.instagram.com/web.artificials/" target="_blank" rel="noopener noreferrer">
+                           <FaInstagram size={24} style={{ color: '#E1306C' }} />
+                        </a>
                      </Box>
                      <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Third Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Forth Link
-                        </Text>
-                     </Box>
-                  </Box>
-               </Flex>
-               <Flex
-                  css={{gap: '$5', w: '250px'}}
-                  direction={'column'}
-                  align={'center'}
-               >
-                  <Text h5>Resources</Text>
-                  <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           First Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Second Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Third Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Forth Link
-                        </Text>
-                     </Box>
-                  </Box>
-               </Flex>
-               <Flex
-                  css={{gap: '$5', w: '250px'}}
-                  direction={'column'}
-                  align={'center'}
-               >
-                  <Text h5>Contact</Text>
-                  <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           First Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Second Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Third Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Forth Link
-                        </Text>
-                     </Box>
-                  </Box>
-               </Flex>
-               <Flex
-                  css={{gap: '$5', w: '250px'}}
-                  direction={'column'}
-                  align={'center'}
-               >
-                  <Text h5>Legal</Text>
-                  <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           First Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Second Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Third Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Forth Link
-                        </Text>
-                     </Box>
-                  </Box>
-               </Flex>
-               <Flex
-                  css={{gap: '$5', w: '250px'}}
-                  direction={'column'}
-                  align={'center'}
-               >
-                  <Text h5>Press</Text>
-                  <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           First Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Second Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Third Link
-                        </Text>
-                     </Box>
-                     <Box as={'li'}>
-                        <Text span css={{color: '$accents8'}}>
-                           Forth Link
-                        </Text>
+                        <a href="https://wa.me/0769518824" target="_blank" rel="noopener noreferrer">
+                           <FaWhatsapp size={24} style={{ color: '#25D366' }} />
+                        </a>
                      </Box>
                   </Box>
                </Flex>
@@ -187,7 +70,6 @@ export const Footer = () => {
                   }}
                />
                <Flex
-                  //   justify={'between'}
                   align={'center'}
                   wrap={'wrap'}
                   css={{
@@ -206,19 +88,17 @@ export const Footer = () => {
                      wrap={'wrap'}
                   >
                      <AcmeLogo />
-                     <AcmeLogo />
-                     <AcmeLogo />
-                     <AcmeLogo />
+                  
                   </Flex>
                   <Flex
                      css={{
                         gap: '$6',
                      }}
                   >
-                     <Text span css={{color: '$accents8'}}>
+                     <Text span css={{ color: '$accents8' }}>
                         Terms of Service
                      </Text>
-                     <Text span css={{color: '$accents8'}}>
+                     <Text span css={{ color: '$accents8' }}>
                         Privacy Policy
                      </Text>
                   </Flex>
@@ -227,8 +107,8 @@ export const Footer = () => {
                         gap: '$6',
                      }}
                   >
-                     <Text span css={{color: '$accents8'}}>
-                        © Copyright 2021 Acme Inc.
+                     <Text span css={{ color: '$accents8' }}>
+                        © Copyright 2024 webai Inc.
                      </Text>
                   </Flex>
                </Flex>
