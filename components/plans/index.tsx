@@ -1,6 +1,4 @@
-
 import { Flex } from '../styles/flex';
-
 import { Button, Card, Divider, Grid, Text } from '@nextui-org/react';
 import React from 'react';
 import { CheckIcon } from '../icons/CheckIcon';
@@ -28,8 +26,6 @@ export const Plans = () => {
           wrap={'wrap'}
           justify={'center'}
         >
-  
-
           {/* Pack Standard */}
           <Card css={{ p: '$6', mw: '400px' }}>
             <Card.Header>
@@ -39,13 +35,20 @@ export const Plans = () => {
                     Pack Standard
                   </Text>
                 </Grid>
-                <Text className='text-3xl font-bold p-2' h4  css={{ lineHeight: '$xs',color: '$blue600'  }}>
-                    1500dh
-                  </Text>
+                <Text className='text-3xl font-bold p-2' h4 css={{ lineHeight: '$xs', color: '$blue600' }}>
+                  1500dh
+                </Text>
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
-              <Button css={{ mt: '$7', mb: '$12' }}>Get Started</Button>
+              <Button css={{ mt: '$7', mb: '$12' }}>
+              
+              <a href="https://wa.me/212769518824?text=Je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Pack%20Standar%20de%201500dh." target="_blank" rel="noopener noreferrer">
+
+Get Started
+
+</a>
+                </Button>
               <Divider />
               <Box as={'ul'}>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
@@ -109,13 +112,20 @@ export const Plans = () => {
                     Pack Sur Mesure
                   </Text>
                 </Grid>
-                <Text className='text-3xl font-bold p-2' h4  css={{ lineHeight: '$xs',color: '$blue600'  }}>
-                    7000dh
-                  </Text>
+                
+                <Text className='text-3xl font-bold p-2' h4 css={{ lineHeight: '$xs', color: '$blue600' }}>
+                  7000dh
+                </Text>
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
-              <Button css={{ mt: '$7', mb: '$12' }}>Get Started</Button>
+              <Button css={{ mt: '$7', mb: '$12' }}>
+              <a href="https://wa.me/212769518824?text=Je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Pack%20packsurmesure%20de%201500dh." target="_blank" rel="noopener noreferrer">
+
+                Get Started
+                
+                </a>
+                </Button>
               <Divider />
               <Box as={'ul'}>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
@@ -203,13 +213,20 @@ export const Plans = () => {
                     Pack E-Commerce
                   </Text>
                 </Grid>
-                <Text className='text-3xl font-bold p-2' h4  css={{ lineHeight: '$xs',color: '$blue600'  }}>
-                    2000dh
-                  </Text>
+                <Text className='text-3xl font-bold p-2' h4 css={{ lineHeight: '$xs', color: '$blue600' }}>
+                  25000dh
+                </Text>
               </Grid.Container>
             </Card.Header>
             <Card.Body css={{ py: '$4' }}>
-              <Button css={{ mt: '$7', mb: '$12' }}>Get Started</Button>
+              <Button css={{ mt: '$7', mb: '$12' }}>
+                
+              <a href="https://wa.me/212769518824?text=Je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Pack%20E-Commerce%20de%201500dh." target="_blank" rel="noopener noreferrer">
+
+Get Started
+
+</a>                
+                </Button>
               <Divider />
               <Box as={'ul'}>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
@@ -218,7 +235,7 @@ export const Plans = () => {
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
-                  <Text span>HD PRO Awesome Design</Text>
+                  <Text span>WEB 2.0 OnePage Design</Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
@@ -238,15 +255,11 @@ export const Plans = () => {
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
-                  <Text span>Passerelle de Paiement Marocaine</Text>
-                </Flex>
-                <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
-                  <CheckIcon />
                   <Text span>Automatisation des Forces de Vente</Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
-                  <Text span>Gestion Ventes, Stocks, Réservations etc</Text>
+                  <Text span>Gestion des Utilisateurs</Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
@@ -266,7 +279,7 @@ export const Plans = () => {
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
-                  <Text span>1 Optimisation SEO</Text>
+                  <Text span>Optimisation SEO</Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
@@ -278,7 +291,7 @@ export const Plans = () => {
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />
-                  <Text span>1000 Likes sur Facebook</Text>
+                  <Text span>5000 Likes sur Facebook</Text>
                 </Flex>
                 <Flex as={'li'} css={{ py: '$2', gap: '$2' }} align={'center'}>
                   <CheckIcon />

@@ -25,9 +25,8 @@ export const ModalLogin = () => {
       setSending(true);
 
       // Create a WhatsApp URL with a pre-filled message
-      const whatsappUrl = `https://wa.me/0769518824?text=${encodeURIComponent(`Message from: ${email}\n\n${message}`)}`;
+      const whatsappUrl = `https://wa.me/212769518824?text=${encodeURIComponent(`Message from: ${email}\n\n${message}`)}`;
 
-      // Redirect to the WhatsApp URL
       window.location.href = whatsappUrl;
 
       // Reset sending state
