@@ -32,7 +32,7 @@ export const Features3 = () => {
               textAlign: 'center',
             }}
           >
-            We create tailored solutions that leverage the latest technologies to help your business thrive. Whether it's mobile apps, web apps, or custom websites, we bring your vision to life.
+            We create tailored solutions that leverage the latest technologies to help your business thrive. Whether its mobile apps, web apps, or custom websites, we bring your vision to life.
           </Text>
         </Flex>
 
